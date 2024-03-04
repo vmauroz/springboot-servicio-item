@@ -43,7 +43,7 @@ public class ItemServiceImpl implements IItemService {
 	@Override
 	public Producto save(Producto producto) {
 		HttpEntity<Producto> body = new HttpEntity<Producto>(producto);
-		ResponseEntity<Producto> response = clienteRest.exchange("http://servicio-productos/crear", HttpMethod.POST, body, Producto.class);
+		ResponseEntity<Producto> response = clienteRest.exchange("http://localhost:8090/api/productos/crear", HttpMethod.POST, body, Producto.class);
 		Producto productoResponse = response.getBody();
 		return productoResponse;
 		
@@ -54,7 +54,7 @@ public class ItemServiceImpl implements IItemService {
 		Map<String, String> pathVariables = new HashMap<String, String>();
 		pathVariables.put("id", id.toString());
 		HttpEntity<Producto> body = new HttpEntity<Producto>(producto);
-		ResponseEntity<Producto> response = clienteRest.exchange("http://servicio-productos/editar/{id}", HttpMethod.PUT, body, Producto.class, pathVariables);
+		ResponseEntity<Producto> response = clienteRest.exchange("http://localhost:8090/api/productos/editar/{id}", HttpMethod.POST, body, Producto.class, pathVariables);
 
 		return response.getBody();
 	}
@@ -63,6 +63,6 @@ public class ItemServiceImpl implements IItemService {
 	public void eliminar(Long id) {
 		Map<String, String> pathVariables = new HashMap<String, String>();
 		pathVariables.put("id", id.toString());
-		clienteRest.delete("http://servicio-productos/eliminar/{id}", pathVariables);
+		clienteRest.delete("http://localhost:8090/api/productos/eliminar/{id}", pathVariables);
 	}
 }

@@ -29,19 +29,17 @@ public class ItemServiceFeignImpl implements IItemService {
 
 	@Override
 	public Producto save(Producto producto) {
-		// TODO Auto-generated method stub
-		return null;
+		return clienteFeign.crear(producto);
 	}
 
 	@Override
 	public Producto editar(Producto producto, Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		return clienteFeign.editar(producto, id);
 	}
 
 	@Override
 	public void eliminar(Long id) {
-		// TODO Auto-generated method stub
+		clienteFeign.eliminar(0);
 		
 	}
 }
