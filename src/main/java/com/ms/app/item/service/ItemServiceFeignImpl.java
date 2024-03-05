@@ -39,7 +39,7 @@ public class ItemServiceFeignImpl implements IItemService {
 
 	@Override
 	public void eliminar(Long id) {
-		clienteFeign.eliminar(0);
+		clienteFeign.eliminar(id);
 		
 	}
 }
