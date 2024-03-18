@@ -2,7 +2,7 @@ package com.ms.app.item.model;
 
 import java.util.Date;
 
-public class Producto  {
+public class ProductoDeleted  {
 
 	/**
 	 * 

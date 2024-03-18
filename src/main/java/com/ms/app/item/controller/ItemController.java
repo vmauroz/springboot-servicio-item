@@ -27,9 +27,9 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ms.app.item.model.Item;
-import com.ms.app.item.model.Producto;
 import com.ms.app.item.service.IItemService;
 
+import cl.ms.app.commons.model.entity.Producto;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.timelimiter.annotation.TimeLimiter;
 

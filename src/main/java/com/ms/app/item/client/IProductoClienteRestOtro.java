@@ -6,7 +6,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.ms.app.item.model.Producto;
+import cl.ms.app.commons.model.entity.Producto;
 
 //@FeignClient( name = "microservicio-producto")
 public interface IProductoClienteRestOtro {

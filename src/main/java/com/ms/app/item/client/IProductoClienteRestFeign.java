@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.ms.app.item.model.Producto;
+import cl.ms.app.commons.model.entity.Producto;
 
 @FeignClient( name = "microservicio-producto") //, url="localhost:8001")
 public interface IProductoClienteRestFeign {

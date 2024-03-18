@@ -3,7 +3,8 @@ package com.ms.app.item.service;
 import java.util.List;
 
 import com.ms.app.item.model.Item;
-import com.ms.app.item.model.Producto;
+
+import cl.ms.app.commons.model.entity.Producto;
 
 public interface IItemService {
 	public List<Item> findAll();

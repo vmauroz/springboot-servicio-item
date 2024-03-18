@@ -1,5 +1,7 @@
 package com.ms.app.item.model;
 
+import cl.ms.app.commons.model.entity.Producto;
+
 public class Item {
 
 	private Producto producto;

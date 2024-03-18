@@ -8,7 +8,8 @@ import org.springframework.stereotype.Service;
 
 import com.ms.app.item.client.IProductoClienteRestFeign;
 import com.ms.app.item.model.Item;
-import com.ms.app.item.model.Producto;
+
+import cl.ms.app.commons.model.entity.Producto;
 
 @Service("serviceRestFeign")
 //@Primary //deja este servicio como primarios, si hay 2 iguales deja este, reemplaza al qualifier
